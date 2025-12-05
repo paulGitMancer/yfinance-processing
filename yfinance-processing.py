@@ -18,7 +18,7 @@ Created on Tue Nov 25 17:58:18 2025
 #----- current stock data. The script will also perform a few numerical -----#
 #----- calculations. The data is then written to a new workbook and some ----#
 #----- minor formatting is performed. The final output workbook is saved ----#
-#-------------- to the file path designated below (line 166). ---------------#
+#-------------- to the file path designated below (line 165). ---------------#
 #----------------------------------------------------------------------------#
 
 #-----------------------------------------#
@@ -163,6 +163,5 @@ for row_number in range(1, sheet_output.max_row+1):                             
 #------------------------------------------#
 
 wb_output.save('C://StockAnalysis.xlsx')                                        # Output file path.
-
 
 print("Analysis complete. Data available in StockAnalysis.xlsx.")               # Confirmation message.
