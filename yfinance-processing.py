@@ -165,5 +165,3 @@ for row_number in range(1, sheet_output.max_row+1):                             
 wb_output.save('C://StockAnalysis.xlsx')                                         # Output file path.
 
 print("Analysis complete. Data available in stock-analysis.xlsx.")               # Confirmation message.
-
-
