@@ -2,12 +2,12 @@
 """
 Created on Tue Nov 25 17:58:18 2025
 
-@author: Paul
+@author: paulGitMancer
 """
 
 #----------------------------------------------------------------------------#
 #-------------------------- TOP 200 STOCK ANALYSIS --------------------------#
-#--------------------------------- Paul Adya --------------------------------#
+#------------------------------ paulGitMancer -------------------------------#
 #----------------------------------------------------------------------------#
 
 #----------------------------------------------------------------------------#
@@ -35,7 +35,7 @@ from openpyxl.styles import Alignment
 #------------------------------------------#
 
 wb_input = openpyxl.load_workbook \
-    ('C:/Users/Paul/Downloads/ProjectTickers.xlsx')                             # Opens the workbook containing top 200 tickers.
+    ('C://Tickers_File.xlsx')                                                   # Opens the workbook containing top 200 tickers.
 sheet_input = wb_input.active                                                   # Selects the active sheet from the workbook.
 
 #------------------------------------------#
@@ -162,6 +162,7 @@ for row_number in range(1, sheet_output.max_row+1):                             
 #-------- EXPORT NEW TICKERS FILE ---------#
 #------------------------------------------#
 
-wb_output.save('C:/Users/Paul/Downloads/StockAnalysis.xlsx')                    # Output file path.
+wb_output.save('C://StockAnalysis.xlsx')                                        # Output file path.
+
 
 print("Analysis complete. Data available in StockAnalysis.xlsx.")               # Confirmation message.
