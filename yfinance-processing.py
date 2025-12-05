@@ -35,7 +35,7 @@ from openpyxl.styles import Alignment
 #------------------------------------------#
 
 wb_input = openpyxl.load_workbook \
-    ('C://Tickers_File.xlsx')                                                   # Opens the workbook containing top 200 tickers.
+    ('C://tickers-file.xlsx')                                                   # Opens the workbook containing top 200 tickers.
 sheet_input = wb_input.active                                                   # Selects the active sheet from the workbook.
 
 #------------------------------------------#
@@ -164,4 +164,5 @@ for row_number in range(1, sheet_output.max_row+1):                             
 
 wb_output.save('C://StockAnalysis.xlsx')                                        # Output file path.
 
-print("Analysis complete. Data available in StockAnalysis.xlsx.")               # Confirmation message.
+print("Analysis complete. Data available in stock-analysis.xlsx.")               # Confirmation message.
+
